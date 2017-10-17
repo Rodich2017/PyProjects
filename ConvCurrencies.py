@@ -1,33 +1,37 @@
 # ---------- convert BGN to USD -------------------
 # rateUSD = 1.79549
 # convValue = float(input())
-# newValue =   convValue * rateUSD
+# newValue = convValue * rateUSD
 # print(round(newValue,2))
 # -------------------------------------------------
 # ---------- convert BGN to EUR, USD or GBP -------
-# import math
-#
-# rateBGN = 1
-# rateUSD = 1.79549
-# rateEUR = 1.95583
-# rateGBP = 2.53405
-#
-# convValue = float(input())
-# convCurrIn = input()
-# convCurrOUT = input()
-# newValue = 0.00
-#
-# if convCurrOut == 'BGN':
-#     if convCurrIn == 'USD':
-#         newValue = convValue * rateUSD
-#     if convCurrIn == 'EUR':
-#         newValue = convValue * rateEUR
-#     if convCurrIn == 'GBP':
-#         newValue = convValue * rateGBP
-#     if convCurrIn == 'BGN':
-#         newValue = convValue
-#
-# print(round(newValue,2))
-#
+
+value = float ( input ( ) )
+currIn = input ( )
+currOut = input ( )
+a = 0.00
+b = 0.00
+
+if currIn == "BGN":
+    a = value
+elif currIn == "USD":
+    a = value * 1.79549
+elif currIn == "EUR":
+    a = value * 1.95583
+elif currIn == "GBP":
+    a = value * 2.53405
+
+if currOut == "BGN":
+    b = a / 1
+elif currOut == "USD":
+    b = a / 1.79549
+elif currOut == "EUR":
+    b = a / 1.95583
+elif currOut == "GBP":
+    b = a / 2.53405
+
+print ( "%.2f" % b + " " + currOut )
+# print(round(b,2))
+
 # -------------------------------------------------
 

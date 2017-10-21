@@ -1,5 +1,5 @@
-eval = float(input())
-if eval >= 5.5:
-    print("Excellent!")
-else:
-    print("You could more ...")
+rate = float ( input ( ) )
+
+if rate >= 5.50:
+    print ( "Excellent!" )
+

@@ -11,7 +11,7 @@ else:
 
 if vhod % 2 == 0:
     bonus = bonus + 1
-if vhod % 5 == 0:
+if vhod % 10 == 5:
     bonus = bonus + 2
 
 print(bonus)

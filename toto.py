@@ -5,8 +5,12 @@ import sys
 #  LOTO - 4 happy digits from Your choice numbers
 # ================================================
 
+try:
+    kolko = int(input("Plese enter some number in a range from 11 to 49: "))
+except ValueError:
+    print("Not a number")
+    exit ( )
 
-kolko = int(input("Plese enter some number in a range from 11 to 49: "))
 some = 0
 flag = 0
 
